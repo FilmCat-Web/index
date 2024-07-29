@@ -66,6 +66,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
+            justify-content: center;
         }
         .movie {
             position: relative;
@@ -143,13 +144,12 @@
         <p>&copy; 2024 FilmCat. Todos los derechos reservados.</p>
     </footer>
     <script>
-        const jsonUrl = 'https://filmcat-app-default-rtdb.firebaseio.com/list_series/.json';
+        const jsonUrl = 'https://filmcatdb-default-rtdb.firebaseio.com/list/list_movie_serie/.json';
 
         fetch(jsonUrl)
             .then(response => response.json())
             .then(data => {
                 const moviesContainer = document.getElementById('movies');
-                // Itera sobre las claves del objeto
                 for (const key in data) {
                     if (data.hasOwnProperty(key)) {
                         const movie = data[key];
