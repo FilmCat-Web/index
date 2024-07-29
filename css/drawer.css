@@ -1,9 +1,9 @@
 .drawer {
     position: fixed;
-    top: 60px; /* Debajo del toolbar */
+    top: 50px; /* Debajo del toolbar */
     left: -250px; /* Inicialmente oculto */
     width: 250px;
-    height: calc(100% - 60px); /* Altura del drawer ajustada */
+    height: calc(100% - 50px); /* Altura del drawer ajustada */
     background-color: #333;
     color: #fff;
     transition: left 0.3s ease, opacity 0.3s ease;
