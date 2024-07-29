@@ -5,17 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FilmCat</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_menu.css">
 </head>
 <body>
+    <div class="navbar">
+        <span class="menu-icon" onclick="toggleDrawer()">☰</span>
+        <h1>FilmCat</h1>
+    </div>
+    <div id="drawer" class="drawer">
+        <a href="#inicio">Inicio</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#actualizaciones">Actualizaciones</a>
+        <a href="#nosotros">Nosotros</a>
+    </div>
+    
     <!-- Sección de introducción -->
-    <header>
+    <header id="inicio">
         <h1>Bienvenido a FilmCat</h1>
         <p>FilmCat es una aplicación para ver películas, series y televisión gratis. Disponible para Android.</p>
         <a href="link-de-descarga" class="download-button">Descargar App</a>
     </header>
     
     <!-- Sección de novedades -->
-    <section class="updates section">
+    <section id="actualizaciones" class="updates section">
         <h2>Novedades</h2>
         <div class="update-list">
             <ul>
@@ -28,7 +40,7 @@
     </section>
     
     <!-- Sección de lista de películas -->
-    <section class="movie-list section">
+    <section id="catalogo" class="movie-list section">
         <h2>Películas Disponibles</h2>
         <div id="movies"></div>
     </section>
@@ -43,6 +55,7 @@
         </div>
     </section>
     
+    <script src="js/script_menu.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
