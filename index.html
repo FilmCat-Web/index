@@ -3,11 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Películas</title>
+    <title>FilmCat</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div id="movies" class="movie-list"></div>
+    <!-- Sección de introducción -->
+    <header>
+        <h1>Bienvenido a FilmCat</h1>
+        <p>FilmCat es una aplicación para ver películas, series y televisión gratis. Disponible para Android.</p>
+        <a href="link-de-descarga" class="download-button">Descargar App</a>
+    </header>
+    
+    <!-- Sección de novedades -->
+    <section class="updates section">
+        <h2>Novedades</h2>
+        <div class="update-list">
+            <ul>
+                <li>Versión 1.0 - Lanzamiento inicial</li>
+                <li>Versión 1.1 - Mejoras en la interfaz</li>
+                <li>Versión 1.2 - Nuevas funciones y corrección de errores</li>
+                <!-- Agrega más novedades según sea necesario -->
+            </ul>
+        </div>
+    </section>
+    
+    <!-- Sección de lista de películas -->
+    <section class="movie-list section">
+        <h2>Películas Disponibles</h2>
+        <div id="movies"></div>
+    </section>
+    
+    <!-- Sección de imágenes de la app -->
+    <section class="app-images section">
+        <h2>Imágenes de la Aplicación</h2>
+        <div class="image-gallery">
+            <img src="images/default-image1.jpg" alt="Captura de pantalla 1">
+            <img src="images/default-image2.jpg" alt="Captura de pantalla 2">
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </section>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
