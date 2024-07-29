@@ -59,6 +59,22 @@
             bottom: 0;
             width: 100%;
         }
+        .movie-list {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .movie {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+        }
+        .movie img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -93,9 +109,34 @@
             <img src="default-image3.jpg" alt="Captura de pantalla 3">
             <!-- Reemplaza estas imágenes con tus capturas de pantalla -->
         </section>
+        <section class="movie-list section">
+            <h2>Películas Disponibles</h2>
+            <div id="movies"></div>
+        </section>
     </div>
     <footer>
         <p>&copy; 2024 FilmCat. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        const jsonUrl = 'https://filmcatdb-default-rtdb.firebaseio.com/list/list_movie_serie/.json';
+
+        fetch(jsonUrl)
+            .then(response => response.json())
+            .then(data => {
+                const moviesContainer = document.getElementById('movies');
+                // Itera sobre las claves del objeto
+                Object.keys(data).forEach(key => {
+                    const movie = data[key];
+                    const movieElement = document.createElement('div');
+                    movieElement.className = 'movie';
+                    movieElement.innerHTML = `
+                        <h3>${movie.title || 'Título desconocido'}</h3>
+                        <img src="${movie.img_poster || 'default-image.jpg'}" alt="${movie.title || 'Título desconocido'}">
+                    `;
+                    moviesContainer.appendChild(movieElement);
+                });
+            })
+            .catch(error => console.error('Error al cargar los datos:', error));
+    </script>
 </body>
 </html>
