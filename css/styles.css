@@ -1,12 +1,25 @@
 /* Estilos para la lista de películas */
 .movie-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho */
     gap: 15px;
-    max-width: 1200px;
+    max-width: 100%; /* Ajustar al ancho total de la pantalla */
     margin: 0 auto;
     padding: 20px;
-    justify-content: center;
+}
+
+/* Ajuste para pantallas medianas */
+@media (max-width: 900px) {
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 600px) {
+    .movie-list {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
 }
 
 .movie {
@@ -35,7 +48,7 @@
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis; /* Cambio de clip a ellipsis */
+    text-overflow: ellipsis;
 }
 
 .movie-title span {
