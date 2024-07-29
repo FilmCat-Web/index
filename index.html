@@ -4,14 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FilmCat</title>
-    <link rel="stylesheet" href="toolbar.css">
-    <link rel="stylesheet" href="drawer.css">
-    <link rel="stylesheet" href="cover.css">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="styles.css"> <!-- Si tienes estilos adicionales -->
+    <link rel="stylesheet" href="css/toolbar.css">
+    <link rel="stylesheet" href="css/drawer.css">
+    <link rel="stylesheet" href="css/cover.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Si tienes estilos adicionales -->
 </head>
 <body>
     <!-- El contenido de tu página aquí -->
+        <div class="toolbar">
+        <div class="drawer-btn" onclick="toggleDrawer()">☰</div>
+        <div class="title">FilmCat</div>
+    </div>
+    <div class="drawer" id="drawer">
+        <div class="menu-item" onclick="navigateTo('index.html')">Inicio</div>
+        <div class="menu-item" onclick="navigateTo('catalogo.html')">Catálogo</div>
+        <!-- Agrega más elementos de menú aquí si es necesario -->
+    </div>
+    <div class="cover"></div>
+        <div class="card">
+            <h2>Bienvenido a FilmCat</h2>
+            <p>FilmCat es una aplicación gratuita diseñada para ofrecerte una experiencia completa en entretenimiento audiovisual. Con FilmCat, puedes explorar una vasta biblioteca que incluye más de 300 películas y 20 series, todo al alcance de tu mano.</p>
+            <h3>Características Destacadas:</h3>
+            <ul>
+                <li><strong>Amplio Catálogo:</strong> Disfruta de una impresionante selección de más de 300 películas y 20 series, actualizadas regularmente para ofrecerte lo mejor del cine y la televisión.</li>
+                <li><strong>Visualización Versátil:</strong> Mira tus películas y series favoritas en línea o descárgalas para verlas sin conexión, adaptándose a tus necesidades y estilo de vida.</li>
+            </ul>
+            <p>Descubre todo lo que FilmCat tiene para ofrecerte y transforma tu manera de disfrutar del entretenimiento.</p>
+        </div>
+    <div class="footer">
+        &copy; 2024 FilmCat. Todos los derechos reservados.
+    </div>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
