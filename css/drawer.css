@@ -1,9 +1,9 @@
 .drawer {
     position: fixed;
-    top: 60px; /* Ajusta esto según la altura de tu toolbar */
+    top: 80px; /* Ajusta esto según la altura de tu toolbar */
     left: -250px;
     width: 250px;
-    height: calc(100% - 60px); /* Ajusta la altura para dejar espacio para el toolbar */
+    height: calc(100% - 80px); /* Ajusta la altura para dejar espacio para el toolbar */
     background-color: #333;
     color: #fff;
     transition: left 0.3s ease, opacity 0.3s ease;
