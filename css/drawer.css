@@ -1,0 +1,28 @@
+/* Estilos para el menú deslizable (drawer) */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente oculto */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+    z-index: 999; /* Asegura que el drawer esté encima del contenido */
+}
+
+.drawer.open {
+    left: 0; /* Mostrar el drawer cuando está abierto */
+}
+
+.drawer .menu-item {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+    text-align: center;
+}
+
+.drawer .menu-item:hover {
+    background-color: #555;
+    cursor: pointer;
+}
