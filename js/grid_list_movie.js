@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             const movieGrid = document.getElementById('movie-grid');
             
-            // Recorre los datos y crea los elementos de la cuadrícula
             for (const key in data) {
                 if (data.hasOwnProperty(key)) {
                     const movie = data[key];
