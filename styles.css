@@ -15,11 +15,12 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .movie img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
 }
 
 .movie-title {
@@ -34,7 +35,7 @@
     font-weight: bold;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis; /* Cambio de clip a ellipsis */
 }
 
 .movie-title span {
