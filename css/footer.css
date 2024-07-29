@@ -1,0 +1,9 @@
+/* Estilos para el pie de página (footer) */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    position: relative; /* Permite que el pie de página esté en el flujo normal del documento */
+    margin-top: 20px; /* Espacio antes del pie de página */
+}
