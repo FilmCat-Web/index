@@ -8,20 +8,6 @@
     padding: 20px;
 }
 
-/* Ajuste para pantallas medianas */
-@media (max-width: 900px) {
-    .movie-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    }
-}
-
-/* Ajuste para pantallas pequeñas */
-@media (max-width: 600px) {
-    .movie-list {
-        grid-template-columns: 1fr; /* 1 columna */
-    }
-}
-
 .movie {
     position: relative;
     border: 1px solid #ddd;
@@ -59,4 +45,17 @@
 @keyframes marquee {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
+}
+
+/* Responsividad */
+@media (max-width: 900px) {
+    .movie-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+    }
+}
+
+@media (max-width: 600px) {
+    .movie-list {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
 }
