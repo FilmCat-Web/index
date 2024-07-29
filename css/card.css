@@ -1,0 +1,13 @@
+/* Estilos para las tarjetas (cards) */
+.card {
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    padding: 20px;
+    margin: 20px 0; /* Reducido el margen lateral */
+    max-width: 800px; /* Ancho máximo */
+    position: relative; /* Necesario para que z-index funcione */
+    top: -30px; /* Superposición sobre la portada */
+    z-index: 2; /* Asegura que la caja esté encima de la portada */
+}
