@@ -1,0 +1,10 @@
+/* Estilos para la portada (cover) */
+.cover {
+    width: 100%;
+    height: 200px; /* Altura de la portada */
+    background: url('https://p4.wallpaperbetter.com/wallpaper/210/448/842/internet-simple-background-cat-artwork-wallpaper-preview.jpg') no-repeat center center;
+    background-size: cover;
+    margin-top: 60px; /* Justo debajo del toolbar */
+    position: relative; /* Necesario para que z-index funcione */
+    z-index: 1; /* Asegura que la portada esté debajo de la caja */
+}
