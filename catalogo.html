@@ -52,7 +52,7 @@
 
         .flex-item {
             position: relative;
-            width: calc(33.333% - 20px);
+            width: calc(33.333% - 20px); /* Ajuste para tres columnas */
             margin: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -87,6 +87,18 @@
             }
             100% {
                 transform: translateX(-100%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .flex-item {
+                width: calc(50% - 20px); /* Dos columnas para pantallas más pequeñas */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .flex-item {
+                width: calc(100% - 20px); /* Una columna para pantallas muy pequeñas */
             }
         }
     </style>
@@ -127,9 +139,6 @@
                 })
                 .catch(error => console.error('Error al obtener los datos:', error));
         });
-    </script>
-    <div class="footer">
-        &copy; 2024 FilmCat. Todos los derechos reservados.
-    </div>
+                        </script>
 </body>
   </html>
