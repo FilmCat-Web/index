@@ -14,29 +14,6 @@
             margin: 0;
             font-family: Arial, sans-serif;
         }
-    </style>
-</head>
-<body>
-    <div class="toolbar">
-        <div class="drawer-btn" onclick="toggleDrawer()">☰</div>
-        <div class="title">FilmCat</div>
-        <div class="spacer"></div>
-    </div>
-    <div class="drawer" id="drawer" role="navigation">
-        <div class="menu-item" onclick="navigateTo('index.html')">
-            <i class="fas fa-home"></i> Inicio
-        </div>
-        <div class="menu-item" onclick="navigateTo('catalogo.html')">
-            <i class="fas fa-film"></i> Catálogo
-        </div>
-        <!-- Agrega más elementos de menú aquí -->
-    </div>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
 
         h1 {
             text-align: center;
@@ -104,6 +81,21 @@
     </style>
 </head>
 <body>
+    <div class="toolbar">
+        <div class="drawer-btn" onclick="toggleDrawer()">☰</div>
+        <div class="title">FilmCat</div>
+        <div class="spacer"></div>
+    </div>
+    <div class="drawer" id="drawer" role="navigation">
+        <div class="menu-item" onclick="navigateTo('index.html')">
+            <i class="fas fa-home"></i> Inicio
+        </div>
+        <div class="menu-item" onclick="navigateTo('catalogo.html')">
+            <i class="fas fa-film"></i> Catálogo
+        </div>
+        <!-- Agrega más elementos de menú aquí -->
+    </div>
+
     <h1>Lista de Películas</h1>
     <div id="movie-grid" class="flex-container"></div>
 
@@ -139,6 +131,6 @@
                 })
                 .catch(error => console.error('Error al obtener los datos:', error));
         });
-                        </script>
+    </script>
 </body>
-  </html>
+</html>
